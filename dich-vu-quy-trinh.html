@@ -45,23 +45,32 @@
                 <a href="san-pham.html" class="text-primary hover:text-secondary font-medium transition duration-300">Sản phẩm</a>
                 <a href="lien-he.html" class="bg-secondary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">Liên hệ</a>
             </nav>
-            <button class="md:hidden text-primary focus:outline-none">
+            <button id="mobileMenuButton" class="md:hidden text-primary p-2 focus:outline-none rounded-md hover:bg-gray-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-light border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="index.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Trang Chủ</a>
+                <a href="gioi-thieu.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Giới thiệu</a>
+                <a href="dich-vu-quy-trinh.html" class="text-secondary block px-3 py-2 rounded-md text-base font-medium bg-white shadow">Dịch vụ & Quy trình</a>
+                <a href="san-pham.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Sản phẩm</a>
+                <a href="lien-he.html" class="bg-secondary text-white block px-3 py-2 rounded-md text-base font-medium text-center mt-2 hover:bg-opacity-90">Liên hệ</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="bg-light py-10">
+        <div class="bg-light py-8 md:py-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p class="text-sm text-gray-500">Trang chủ / <span class="text-primary font-medium">Dịch vụ & Quy trình</span></p>
-                <h2 class="text-4xl font-extrabold text-primary mt-2">Dịch Vụ Sản Xuất OEM Toàn Diện</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mt-2">Dịch Vụ Sản Xuất OEM Toàn Diện</h2>
             </div>
         </div>
 
         <section id="dichvu" class="py-16 md:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-3xl font-bold text-primary mb-12 text-center">Các Gói Dịch Vụ Chính</h3>
+                <h3 class="text-2xl md:text-3xl font-bold text-primary mb-12 text-center">Các Gói Dịch Vụ Chính</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 border-t-4 border-secondary">
                         <div class="text-secondary mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14s-3.5 1.5-6 4 0 2 0 2h12c0 0-2-2-6-4-2.5-1.5-6-4-6-4z"></path></svg></div>
@@ -74,7 +83,7 @@
                         <p class="text-gray-600">Thiết kế và sản xuất theo yêu cầu ý tưởng của khách hàng. HIME chịu trách nhiệm trọn gói từ A-Z, phù hợp cho thương hiệu mới.</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 border-t-4 border-secondary">
-                        <div class="text-secondary mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg></div>
+                        <div class="text-secondary mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.674m-.674 3h-3.32c-1.108 0-2-.892-2-2v-2.203a2 2 0 00-.546-1.503l-1.35-1.35C4.24 12.06 4 11.53 4 11V7c0-1.65 1.35-3 3-3h10c1.65 0 3 1.35 3 3v4c0 .53-.24 1.06-.667 1.45l-1.35 1.35a2 2 0 00-.546 1.503V18c0 1.108-.892 2-2 2z"></path></svg></div>
                         <h4 class="text-xl font-bold text-primary mb-3">Tư Vấn Chuyên Sâu</h4>
                         <p class="text-gray-600">Tư vấn về chất liệu, định hướng xu hướng, tiêu chuẩn chất lượng (QC), và tối ưu chi phí sản xuất.</p>
                     </div>
@@ -84,18 +93,18 @@
 
         <section id="quytrinh" class="bg-light py-16 md:py-24">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-3xl font-bold text-primary mb-12 text-center">Quy Trình Sản Xuất Tiêu Chuẩn</h3>
+                <h3 class="text-2xl md:text-3xl font-bold text-primary mb-12 text-center">Quy Trình Sản Xuất Tiêu Chuẩn</h3>
                 
                 <div class="relative bg-white shadow-2xl rounded-xl p-6 md:p-10">
                     <div id="designSlides">
                         <div class="design-slide active" data-index="0">
                             <div class="flex flex-col md:flex-row items-center">
-                                <div class="md:w-1/2 p-4">
-                                    <span class="text-xl font-bold text-secondary block mb-2">Bước 1: Tư Vấn & Tiếp Nhận</span>
-                                    <h4 class="text-2xl font-bold text-primary mb-4">Lắng Nghe Nhu Cầu</h4>
+                                <div class="md:w-1/2 p-4 order-2 md:order-1">
+                                    <span class="text-md font-bold text-secondary block mb-2">Bước 1: Tư Vấn & Tiếp Nhận</span>
+                                    <h4 class="text-xl md:text-2xl font-bold text-primary mb-4">Lắng Nghe Nhu Cầu</h4>
                                     <p class="text-gray-600">Tiếp nhận thông tin chi tiết về sản phẩm, số lượng, chất liệu. Ký kết hợp đồng và đặt cọc.</p>
                                 </div>
-                                <div class="md:w-1/2 p-4">
+                                <div class="md:w-1/2 p-4 order-1 md:order-2">
                                     <img src="https://via.placeholder.com/600x400?text=Bước+1:+Tư+Vấn" alt="Tư Vấn" class="w-full rounded-lg shadow-lg">
                                 </div>
                             </div>
@@ -103,12 +112,12 @@
 
                         <div class="design-slide" data-index="1">
                             <div class="flex flex-col md:flex-row items-center">
-                                <div class="md:w-1/2 p-4">
-                                    <span class="text-xl font-bold text-secondary block mb-2">Bước 2: Phát Triển Mẫu</span>
-                                    <h4 class="text-2xl font-bold text-primary mb-4">Dựng Rập & May Mẫu</h4>
+                                <div class="md:w-1/2 p-4 order-2 md:order-1">
+                                    <span class="text-md font-bold text-secondary block mb-2">Bước 2: Phát Triển Mẫu</span>
+                                    <h4 class="text-xl md:text-2xl font-bold text-primary mb-4">Dựng Rập & May Mẫu</h4>
                                     <p class="text-gray-600">Thiết kế, dựng rập, tiến hành may mẫu thử (Sample) để khách hàng duyệt Form dáng, chất liệu.</p>
                                 </div>
-                                <div class="md:w-1/2 p-4">
+                                <div class="md:w-1/2 p-4 order-1 md:order-2">
                                     <img src="https://via.placeholder.com/600x400?text=Bước+2:+May+Mẫu" alt="Thiết Kế Mẫu Rập" class="w-full rounded-lg shadow-lg">
                                 </div>
                             </div>
@@ -116,12 +125,12 @@
 
                         <div class="design-slide" data-index="2">
                             <div class="flex flex-col md:flex-row items-center">
-                                <div class="md:w-1/2 p-4">
-                                    <span class="text-xl font-bold text-secondary block mb-2">Bước 3: Sản Xuất Đại Trà & QC</span>
-                                    <h4 class="text-2xl font-bold text-primary mb-4">Gia Công Chất Lượng Cao</h4>
+                                <div class="md:w-1/2 p-4 order-2 md:order-1">
+                                    <span class="text-md font-bold text-secondary block mb-2">Bước 3: Sản Xuất Đại Trà & QC</span>
+                                    <h4 class="text-xl md:text-2xl font-bold text-primary mb-4">Gia Công Chất Lượng Cao</h4>
                                     <p class="text-gray-600">Cắt, may, in/thêu hàng loạt. Quy trình QC (Quality Control) 3 giai đoạn: cắt, may, hoàn thiện.</p>
                                 </div>
-                                <div class="md:w-1/2 p-4">
+                                <div class="md:w-1/2 p-4 order-1 md:order-2">
                                     <img src="https://via.placeholder.com/600x400?text=Bước+3:+Sản+Xuất" alt="Sản Xuất" class="w-full rounded-lg shadow-lg">
                                 </div>
                             </div>
@@ -129,12 +138,12 @@
 
                         <div class="design-slide" data-index="3">
                             <div class="flex flex-col md:flex-row items-center">
-                                <div class="md:w-1/2 p-4">
-                                    <span class="text-xl font-bold text-secondary block mb-2">Bước 4: Hoàn Thiện & Bàn Giao</span>
-                                    <h4 class="text-2xl font-bold text-primary mb-4">Đóng Gói & Vận Chuyển</h4>
+                                <div class="md:w-1/2 p-4 order-2 md:order-1">
+                                    <span class="text-md font-bold text-secondary block mb-2">Bước 4: Hoàn Thiện & Bàn Giao</span>
+                                    <h4 class="text-xl md:text-2xl font-bold text-primary mb-4">Đóng Gói & Vận Chuyển</h4>
                                     <p class="text-gray-600">Gắn nhãn mác, ủi, đóng gói chuyên nghiệp theo yêu cầu. Bàn giao sản phẩm đúng tiến độ, thanh lý hợp đồng.</p>
                                 </div>
-                                <div class="md:w-1/2 p-4">
+                                <div class="md:w-1/2 p-4 order-1 md:order-2">
                                     <img src="https://via.placeholder.com/600x400?text=Bước+4:+Hoàn+Thiện" alt="Hoàn Thiện" class="w-full rounded-lg shadow-lg">
                                 </div>
                             </div>
@@ -192,6 +201,16 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Logic cho Mobile Menu
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
             // --- Xử lý cho Slideshow Quy trình ---
             let currentDesignIndex = 0;
             const designSlides = document.querySelectorAll('.design-slide');
@@ -217,11 +236,15 @@
             const nextDesign = () => { updateDesignSlides(currentDesignIndex + 1); };
             const prevDesign = () => { updateDesignSlides(currentDesignIndex - 1); };
 
-            nextDesignBtn.addEventListener('click', nextDesign);
-            prevDesignBtn.addEventListener('click', prevDesign);
+            if (nextDesignBtn && prevDesignBtn) {
+                nextDesignBtn.addEventListener('click', nextDesign);
+                prevDesignBtn.addEventListener('click', prevDesign);
+            }
             
             // Khởi tạo trạng thái ban đầu cho slideshow
-            updateDesignSlides(0);
+            if (designSlides.length > 0) {
+                updateDesignSlides(0);
+            }
         });
     </script>
 </body>
