@@ -35,85 +35,94 @@
                 <a href="san-pham.html" class="text-secondary font-medium transition duration-300">Sản phẩm</a>
                 <a href="lien-he.html" class="bg-secondary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">Liên hệ</a>
             </nav>
-            <button class="md:hidden text-primary focus:outline-none">
+            <button id="mobileMenuButton" class="md:hidden text-primary p-2 focus:outline-none rounded-md hover:bg-gray-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-light border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="index.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Trang Chủ</a>
+                <a href="gioi-thieu.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Giới thiệu</a>
+                <a href="dich-vu-quy-trinh.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Dịch vụ & Quy trình</a>
+                <a href="san-pham.html" class="text-secondary block px-3 py-2 rounded-md text-base font-medium bg-white shadow">Sản phẩm</a>
+                <a href="lien-he.html" class="bg-secondary text-white block px-3 py-2 rounded-md text-base font-medium text-center mt-2 hover:bg-opacity-90">Liên hệ</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="bg-light py-10">
+        <div class="bg-light py-8 md:py-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p class="text-sm text-gray-500">Trang chủ / <span class="text-primary font-medium">Sản phẩm</span></p>
-                <h2 class="text-4xl font-extrabold text-primary mt-2">Danh Mục Sản Phẩm Đã Thực Hiện</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mt-2">Danh Mục Sản Phẩm Đã Thực Hiện</h2>
             </div>
         </div>
 
         <section class="py-16 md:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">Chúng tôi gia công đa dạng các dòng sản phẩm, từ thời trang công sở, dạo phố đến các sản phẩm may mặc đặc thù.</p>
+                <p class="text-center text-md text-gray-600 mb-12 max-w-3xl mx-auto">Chúng tôi gia công đa dạng các dòng sản phẩm, từ thời trang công sở, dạo phố đến các sản phẩm may mặc đặc thù.</p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Áo+Phông" alt="Áo Phông Cao Cấp" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Áo Phông/T-shirt</h4>
-                            <p class="text-sm text-gray-500">Kỹ thuật in/thêu, chất liệu cotton organic, poly</p>
+                        <img src="https://via.placeholder.com/400x500?text=Áo+Phông" alt="Áo Phông Cao Cấp" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Áo Phông/T-shirt</h4>
+                            <p class="text-xs text-gray-500">Kỹ thuật in/thêu, chất liệu cotton organic, poly</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Áo+Sơ+Mi" alt="Áo Sơ Mi Thiết Kế" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Áo Sơ Mi Công Sở/Casual</h4>
-                            <p class="text-sm text-gray-500">Vải linen, tencel, poplin. Form regular và slimfit.</p>
+                        <img src="https://via.placeholder.com/400x500?text=Áo+Sơ+Mi" alt="Áo Sơ Mi Thiết Kế" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Áo Sơ Mi Công Sở/Casual</h4>
+                            <p class="text-xs text-gray-500">Vải linen, tencel, poplin. Form regular và slimfit.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Đầm+Váy" alt="Đầm Váy Thời Trang" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Đầm Váy/Jumpsuit</h4>
-                            <p class="text-sm text-gray-500">Thiết kế phức tạp, yêu cầu độ chính xác cao.</p>
+                        <img src="https://via.placeholder.com/400x500?text=Đầm+Váy" alt="Đầm Váy Thời Trang" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Đầm Váy/Jumpsuit</h4>
+                            <p class="text-xs text-gray-500">Thiết kế phức tạp, yêu cầu độ chính xác cao.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Quần+Jeans" alt="Quần Jeans Dạng Thường" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Quần Jeans/Kaki</h4>
-                            <p class="text-sm text-gray-500">Công nghệ Wash/Dry hiện đại, bền màu, form chuẩn.</p>
+                        <img src="https://via.placeholder.com/400x500?text=Quần+Jeans" alt="Quần Jeans Dạng Thường" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Quần Jeans/Kaki</h4>
+                            <p class="text-xs text-gray-500">Công nghệ Wash/Dry hiện đại, bền màu, form chuẩn.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Áo+Khoác" alt="Áo Khoác Thiết Kế" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Áo Khoác/Blazer/Vest</h4>
-                            <p class="text-sm text-gray-500">Yêu cầu cao về dựng Form và đường may lót.</p>
+                        <img src="https://via.placeholder.com/400x500?text=Áo+Khoác" alt="Áo Khoác Thiết Kế" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Áo Khoác/Blazer/Vest</h4>
+                            <p class="text-xs text-gray-500">Yêu cầu cao về dựng Form và đường may lót.</p>
                         </div>
                     </div>
                      <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Đồ+Thể+Thao" alt="Đồ Thể Thao" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Đồ Thể Thao/Activewear</h4>
-                            <p class="text-sm text-gray-500">Vải co giãn, thấm hút mồ hôi, đường may phẳng.</p>
+                        <img src="https://via.placeholder.com/400x500?text=Đồ+Thể+Thao" alt="Đồ Thể Thao" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Đồ Thể Thao/Activewear</h4>
+                            <p class="text-xs text-gray-500">Vải co giãn, thấm hút mồ hôi, đường may phẳng.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Đồ+Trẻ+Em" alt="Đồ Trẻ Em" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Trang phục Trẻ em</h4>
-                            <p class="text-sm text-gray-500">Chất liệu an toàn, mềm mại, bền bỉ.</p>
+                        <img src="https://via.placeholder.com/400x500?text=Đồ+Trẻ+Em" alt="Đồ Trẻ Em" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Trang phục Trẻ em</h4>
+                            <p class="text-xs text-gray-500">Chất liệu an toàn, mềm mại, bền bỉ.</p>
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
-                        <img src="https://via.placeholder.com/400x500?text=Phụ+Kiện" alt="Phụ Kiện" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
-                        <div class="p-4 text-center">
-                            <h4 class="text-lg font-semibold text-primary">Phụ Kiện May Mặc Khác</h4>
-                            <p class="text-sm text-gray-500">Túi, khăn, nón, v.v. theo yêu cầu thương hiệu.</p>
+                        <img src="https://via.placeholder.com/400x500?text=Phụ+Kiện" alt="Phụ Kiện" class="w-full h-48 sm:h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="p-3 md:p-4 text-center">
+                            <h4 class="text-md md:text-lg font-semibold text-primary">Phụ Kiện May Mặc Khác</h4>
+                            <p class="text-xs text-gray-500">Túi, khăn, nón, v.v. theo yêu cầu thương hiệu.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center mt-12">
-                     <a href="lien-he.html" class="bg-primary text-white text-lg px-8 py-4 rounded-full font-bold hover:bg-opacity-90 transition duration-300 inline-block">Yêu cầu Báo giá Sản phẩm Cụ thể</a>
+                     <a href="lien-he.html" class="bg-primary text-white text-md px-6 py-3 rounded-full font-bold hover:bg-opacity-90 transition duration-300 inline-block">Yêu cầu Báo giá Sản phẩm Cụ thể</a>
                 </div>
             </div>
         </section>
@@ -155,5 +164,18 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Logic cho Mobile Menu
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
