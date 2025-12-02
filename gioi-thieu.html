@@ -21,6 +21,11 @@
         .text-secondary { color: var(--color-secondary); }
         .bg-light { background-color: var(--color-light); }
         .text-light { color: var(--color-light); }
+        /* Tối ưu bố cục cột trên mobile */
+        @media (max-width: 1024px) {
+            .about-grid { display: block; }
+            .about-grid > div:last-child { margin-top: 2rem; }
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -35,47 +40,56 @@
                 <a href="san-pham.html" class="text-primary hover:text-secondary font-medium transition duration-300">Sản phẩm</a>
                 <a href="lien-he.html" class="bg-secondary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">Liên hệ</a>
             </nav>
-            <button class="md:hidden text-primary focus:outline-none">
+            <button id="mobileMenuButton" class="md:hidden text-primary p-2 focus:outline-none rounded-md hover:bg-gray-100">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-light border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="index.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Trang Chủ</a>
+                <a href="gioi-thieu.html" class="text-secondary block px-3 py-2 rounded-md text-base font-medium bg-white shadow">Giới thiệu</a>
+                <a href="dich-vu-quy-trinh.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Dịch vụ & Quy trình</a>
+                <a href="san-pham.html" class="text-primary hover:bg-white block px-3 py-2 rounded-md text-base font-medium">Sản phẩm</a>
+                <a href="lien-he.html" class="bg-secondary text-white block px-3 py-2 rounded-md text-base font-medium text-center mt-2 hover:bg-opacity-90">Liên hệ</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="bg-light py-10">
+        <div class="bg-light py-8 md:py-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <p class="text-sm text-gray-500">Trang chủ / <span class="text-primary font-medium">Giới thiệu</span></p>
-                <h2 class="text-4xl font-extrabold text-primary mt-2">Về Chúng Tôi</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-primary mt-2">Về Chúng Tôi</h2>
             </div>
         </div>
 
         <section class="py-16 md:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center about-grid">
                     <div class="lg:order-2">
-                        <img src="https://via.placeholder.com/700x500?text=Nhà+Máy+HIME" alt="Nhà máy HIME Việt Nam" class="rounded-xl shadow-2xl">
+                        <img src="https://via.placeholder.com/700x500?text=Nhà+Máy+HIME" alt="Nhà máy HIME Việt Nam" class="rounded-xl shadow-2xl w-full h-auto">
                     </div>
                     <div class="lg:order-1">
                         <h3 class="text-xs font-semibold text-secondary uppercase tracking-widest mb-2">Sứ Mệnh & Tầm Nhìn</h3>
-                        <h4 class="text-4xl font-bold text-primary mb-6">Đơn vị Sản xuất & Thương mại May mặc Hàng đầu Việt Nam</h4>
+                        <h4 class="text-3xl md:text-4xl font-bold text-primary mb-6">Đơn vị Sản xuất & Thương mại May mặc Hàng đầu Việt Nam</h4>
                         <p class="text-gray-600 mb-4">
                             Được thành lập với sứ mệnh nâng tầm thương hiệu thời trang Việt, **HIME Việt Nam** tự hào là đối tác OEM/ODM tin cậy, cung cấp giải pháp sản xuất trọn gói từ khâu nghiên cứu, thiết kế, tìm kiếm nguyên liệu đến gia công và hoàn thiện sản phẩm.
                         </p>
                         <p class="text-gray-600 mb-6">
                             Tầm nhìn của chúng tôi là trở thành công ty may mặc OEM tiên phong về công nghệ và bền vững tại Đông Nam Á, mang lại giá trị cao nhất cho đối tác và cộng đồng.
                         </p>
-                        <div class="flex space-x-6">
-                            <div class="p-4 bg-light rounded-lg">
-                                <p class="text-3xl font-extrabold text-secondary">10+</p>
-                                <p class="text-sm text-primary">Năm Kinh nghiệm</p>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div class="p-3 bg-light rounded-lg text-center">
+                                <p class="text-2xl font-extrabold text-secondary">10+</p>
+                                <p class="text-xs text-primary">Năm Kinh nghiệm</p>
                             </div>
-                            <div class="p-4 bg-light rounded-lg">
-                                <p class="text-3xl font-extrabold text-secondary">500+</p>
-                                <p class="text-sm text-primary">Dự án Thành công</p>
+                            <div class="p-3 bg-light rounded-lg text-center">
+                                <p class="text-2xl font-extrabold text-secondary">500+</p>
+                                <p class="text-xs text-primary">Dự án Thành công</p>
                             </div>
-                            <div class="p-4 bg-light rounded-lg">
-                                <p class="text-3xl font-extrabold text-secondary">1M+</p>
-                                <p class="text-sm text-primary">Sản phẩm mỗi năm</p>
+                            <div class="p-3 bg-light rounded-lg text-center">
+                                <p class="text-2xl font-extrabold text-secondary">1M+</p>
+                                <p class="text-xs text-primary">Sản phẩm mỗi năm</p>
                             </div>
                         </div>
                         <a href="dich-vu-quy-trinh.html" class="mt-8 inline-block text-secondary font-semibold hover:underline">Tìm hiểu về Dịch vụ &rarr;</a>
@@ -86,20 +100,20 @@
         
         <section class="bg-light py-16 md:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-3xl font-bold text-primary mb-12 text-center">Giá Trị Cốt Lõi</h3>
+                <h3 class="text-2xl md:text-3xl font-bold text-primary mb-12 text-center">Giá Trị Cốt Lõi</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     <div class="p-6">
-                        <div class="text-secondary mb-4 mx-auto w-fit"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+                        <div class="text-secondary mb-4 mx-auto w-fit"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
                         <h4 class="text-xl font-bold text-primary mb-3">Chất Lượng</h4>
                         <p class="text-gray-600">Kiểm soát nghiêm ngặt từ nguyên liệu đầu vào đến sản phẩm hoàn thiện, đạt tiêu chuẩn xuất khẩu.</p>
                     </div>
                      <div class="p-6">
-                        <div class="text-secondary mb-4 mx-auto w-fit"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <div class="text-secondary mb-4 mx-auto w-fit"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
                         <h4 class="text-xl font-bold text-primary mb-3">Minh Bạch</h4>
                         <p class="text-gray-600">Quy trình làm việc rõ ràng, báo giá chi tiết và công bằng, đảm bảo niềm tin tuyệt đối từ đối tác.</p>
                     </div>
                      <div class="p-6">
-                        <div class="text-secondary mb-4 mx-auto w-fit"><svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.674m-.674 3h-3.32c-1.108 0-2-.892-2-2v-2.203a2 2 0 00-.546-1.503l-1.35-1.35C4.24 12.06 4 11.53 4 11V7c0-1.65 1.35-3 3-3h10c1.65 0 3 1.35 3 3v4c0 .53-.24 1.06-.667 1.45l-1.35 1.35a2 2 0 00-.546 1.503V18c0 1.108-.892 2-2 2z"></path></svg></div>
+                        <div class="text-secondary mb-4 mx-auto w-fit"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.674m-.674 3h-3.32c-1.108 0-2-.892-2-2v-2.203a2 2 0 00-.546-1.503l-1.35-1.35C4.24 12.06 4 11.53 4 11V7c0-1.65 1.35-3 3-3h10c1.65 0 3 1.35 3 3v4c0 .53-.24 1.06-.667 1.45l-1.35 1.35a2 2 0 00-.546 1.503V18c0 1.108-.892 2-2 2z"></path></svg></div>
                         <h4 class="text-xl font-bold text-primary mb-3">Đổi Mới</h4>
                         <p class="text-gray-600">Liên tục cập nhật công nghệ sản xuất và xu hướng thiết kế mới nhất để phục vụ khách hàng.</p>
                     </div>
@@ -144,5 +158,18 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Logic cho Mobile Menu
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
